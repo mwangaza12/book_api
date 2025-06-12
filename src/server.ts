@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5000;
 
 // Basic Middleware
 app.use(cors({
-  origin: ['http://localhost:5173','https://book-app-react-mocha.vercel.app/']
+  origin: ['http://localhost:5173','https://book-app-react-mocha.vercel.app']
 }));
 
 app.use(express.json());
