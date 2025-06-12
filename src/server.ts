@@ -1,5 +1,6 @@
 import express, { Application, Response } from "express";
 import dotenv from "dotenv";
+import cors from 'cors';
 import {logger} from "./middleware/logger";
 import { bookRouter } from "./book/book.route";
 
@@ -9,6 +10,10 @@ const app: Application = express();
 const PORT = process.env.PORT || 5000;
 
 // Basic Middleware
+app.use(cors({
+  origin: ['http://localhost:5173','https://book-app-react-mocha.vercel.app/']
+}));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(logger);

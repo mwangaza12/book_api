@@ -19,6 +19,8 @@
   "packageManager": "pnpm@10.11.0",
   "dependencies": {
     "@neondatabase/serverless": "^1.0.1",
+    "@types/cors": "^2.8.19",
+    "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "drizzle-kit": "^0.31.1",
     "drizzle-orm": "^0.43.1",
