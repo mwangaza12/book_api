@@ -19,23 +19,23 @@ POST http://localhost:5000/api/books
 Content-Type: application/json
 
 {
-    "title": "1",
-    "author": "w",
+    "title": "New Book Title",
+    "author": "New Author Name",
     "year": 2023,
-    "genre": "1"
+    "genre": "Fiction"
 }
 
 // Update a book by ID
 ###
-PUT http://localhost:5000/api/books/4
+PUT http://localhost:5000/api/books/5
 Content-Type: application/json
 
 {
-    "title": "Updated Book Title",
-    "author": "Updated Author Name",
-    "year": 2024,
-    "genre": "Non-Fiction"
+    "title": "Kotli in Action",
+    "author": "John Doe",
+    "year": 1999,
+    "genre": "Programming"
 }
 // Delete a book by ID
 ###
-DELETE http://localhost:5000/api/books/4
+DELETE http://localhost:5000/api/books/1
